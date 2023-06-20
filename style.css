@@ -1,0 +1,167 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-image: linear-gradient(to left, darkblue , darkviolet);
+    font-family: sans-serif;
+    }
+
+ .container {
+    position: relative;
+    display: flex;
+    left: 33%;
+    top: 10vh;
+    font-size: 2rem;
+    width: 380px;
+    height: 620px;
+    justify-content: center;
+    border: 3px solid wheat;
+    border-radius: 25px;
+    background-image: url(./night.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.container .day {
+    background-image: url(./sunny.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .night{
+    background-image: url(./night.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inputTemp {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 80px;
+}
+
+.inputTemp .search-submit {
+    display: flex;
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    top: 20%;
+    left: 40%;
+    margin: 0 auto;
+    min-width: 266px;
+    justify-content: center;
+}
+
+.search-submit .search {
+    padding-left: 12px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.search-submit .submit {
+    position: absolute;
+    right: 38px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.search-submit .submit:hover {
+    background-color: blue;
+}
+
+.inputTemp_number {
+    position: absolute;
+    display: flex;
+    left: 230px;
+    top: 100px;
+    color: white;
+}
+
+.inputTemp_celsius {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.inputTemp_symbol {
+    padding-left: 8px;
+    padding-top: 8px;
+    font-size: 2rem
+}
+
+.inputTemp_details {
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left: 200px;
+    color: white;
+}
+
+#weatherIcon {
+    width: 70px;
+    height: 50px;
+    background-image: url(./day-cloudy-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+}
+
+.location {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    color:white;
+    top: 420px;
+    border-bottom: 1px solid wheat;
+    justify-content: space-between;
+
+}
+
+.location-city {
+    left: 520px;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.location-date {
+    position: absolute;
+    display: flex;
+    top: -20px;
+    left: 250px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.location-weather {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: gray;
+    padding-bottom: 2px;
+}
+
+.weather {
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    width: 400px;
+    justify-content: space-around;
+    color: white;
+
+}
+
+/* Display grid a las secciones de clima de los siguientes días */
+
+footer div {
+    color: white;
+}

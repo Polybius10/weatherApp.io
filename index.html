@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- mobile -->
+    <title>WeatherApp</title>
+</head>
+<body>
+    <main class="container" id="container">
+        <article class="inputTemp">
+            <form class="search-submit" id="searchSubmit">
+                <input class="search" id="searchInput" placeholder="Find your location..."></input>
+                <button type="submit" class="submit">🔎</button>            
+            </form>
+            <div class="inputTemp_number">
+                <div class="inputTemp_celsius" id="degreeNumber">16</div>
+                <div class="inputTemp_symbol"> °C</div>
+            </div>
+
+            <section class="inputTemp_details">
+                <div id="weatherIcon"></div>
+                <div class="inputTemp_description" id="description">Cloudy</div>
+            </section>
+
+        </article>
+   
+        <section class="location">
+            <div class="location-city" id="timezone">Buenos Aires</div>
+            <div class="location-date" id="date">16:20</div>
+            <div class="location-weather" id="localWeather">Saturday</div>
+        </section>
+
+        <section class="weather">
+            <div class="weather_min"><small>min</small><span id="min"></span>°C</div>
+            <div class="weather_max"><small>min</small><span id="max"></span>°C</div>
+        </section>
+
+
+     </main>
+
+     <footer>
+        <div>@</div>
+     </footer>
+
+    
+
+    <script src="weather.js"></script> 
+</body>
+</html>
